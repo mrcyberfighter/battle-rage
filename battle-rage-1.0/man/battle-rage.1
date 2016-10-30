@@ -1,0 +1,263 @@
+.\" Man page generated from reStructuredText.
+.
+.TH BATTLE-RAGE 1  "" "" ""
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.SH NAME
+.INDENT 0.0
+\fIbattle\-rage\fP \- A Beat\-Them\-All game playable with joystick(s).
+.UNINDENT
+.UNINDENT
+.SH DESCRIPTION
+.sp
+\fIbattle\-rage\fP is a fighting game, you can play:
+.INDENT 0.0
+.IP \(bu 2
+\fIPlayer\fP \fBvs\fP \fIComputer\fP
+.IP \(bu 2
+\fIPlayer\fP \fBvs\fP \fIPlayer\fP
+.IP \(bu 2
+\fIComputer\fP \fBvs\fP \fIComputer\fP
+.UNINDENT
+.INDENT 0.0
+.TP
+.B note
+A joystick is required in order to play \fBbattel\-rage\fP\&.
+.UNINDENT
+.sp
+\fBJoystick combinations:\fP
+.nf
+
+.fi
+.sp
+.sp
+\fIjoystick\fP
+.nf
+
+.fi
+.sp
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+    +\-\-\-\-\-+             +\-\-\-+
+    |  ↑  |             | B |
++\-\-\-+     +\-\-\-+  +\-\-\-+  +\-\-\-+  +\-\-\-+
+| ←         → |  | A |         | X |
++\-\-\-+     +\-\-\-+  +\-\-\-+  +\-\-\-+  +\-\-\-+
+    |  ↓  |             | Y |
+    +\-\-\-\-\-+             +\-\-\-+
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.IP \(bu 2
+The \fBback hand\fP from your fighter is \fBactivate\fP by \fBpressing\fP
+.sp
+the \fIA\fP button from the \fIjoystick\fP\&.
+.IP \(bu 2
+The \fBfront hand\fP from your fighter  is \fBactivate\fP by \fBpressing\fP
+.sp
+the \fIX\fP button from the \fIjoystick\fP\&.
+.IP \(bu 2
+The \fBfront leg\fP from your fighter is \fBactivate\fP by \fBpressing\fP
+.sp
+the \fIB\fP button from the \fIjoystick\fP\&.
+.IP \(bu 2
+The \fBback leg\fP from your fighter is \fBactivate\fP by \fBpressing\fP
+.sp
+the \fIY\fP button from the \fIjoystick\fP\&.
+.UNINDENT
+.sp
+So you get the following differents combinations:
+.sp
+Simple \fBcombinations\fP:
+.nf
+
+.fi
+.sp
+.INDENT 0.0
+.IP \(bu 2
+Only \fIA\fP : a \fBback hand\fP kick.
+.IP \(bu 2
+Only \fIX\fP : a \fBfront hand\fP kick.
+.IP \(bu 2
+Only \fIB\fP : a \fBfront leg\fP kick.
+.IP \(bu 2
+Only \fIY\fP : a \fBfront leg\fP kick.
+.IP \(bu 2
+Only \fI→\fP : the \fBfighter\fP \fBmoves\fP in direction \fBright\fP\&.
+.IP \(bu 2
+Only \fI←\fP : the \fBfighter\fP \fBmoves\fP in direction \fBleft\fP\&.
+.IP \(bu 2
+Only \fI↓\fP : the \fBfighter\fP goes \fBdown\fP: on his knees.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B note
+The \fI↑\fP is not used for jumping: some combination makes the fighter jumping.
+.UNINDENT
+.sp
+Direction + Button \fBcombinations\fP:
+.nf
+
+.fi
+.sp
+.sp
+\fBback hand\fP kicks:
+.nf
+
+.fi
+.sp
+.INDENT 0.0
+.IP \(bu 2
+\fI→\fP \fB+\fP \fIA\fP : a \fBbig\fP \fBback hand\fP kick.
+.IP \(bu 2
+\fI←\fP \fB+\fP \fIA\fP : \fBprotected\fP in standing.
+.IP \(bu 2
+\fI↑\fP \fB+\fP \fIA\fP : a \fBback hand\fP \fBuppercut\fP\&.
+.IP \(bu 2
+\fI↓\fP \fB+\fP \fIA\fP :  \fBprotected\fP on knees.
+.UNINDENT
+.sp
+\fBfront hand\fP kicks:
+.nf
+
+.fi
+.sp
+.INDENT 0.0
+.IP \(bu 2
+\fI→\fP \fB+\fP \fIX\fP : a \fBbig\fP \fBfront hand\fP kick.
+.IP \(bu 2
+\fI←\fP \fB+\fP \fIX\fP : a \fBreturned\fP \fBfront hand\fP kick.
+.IP \(bu 2
+\fI↑\fP \fB+\fP \fIX\fP : a \fBfront hand\fP \fBuppercut\fP\&.
+.IP \(bu 2
+\fI↓\fP \fB+\fP \fIX\fP : a \fBfront hand\fP kick \fBto knees\fP\&.
+.UNINDENT
+.sp
+\fBfront foot\fP kicks:
+.nf
+
+.fi
+.sp
+.INDENT 0.0
+.IP \(bu 2
+\fI→\fP \fB+\fP \fIB\fP : a \fBfront foot\fP kick to \fBbody\fP\&.
+.IP \(bu 2
+\fI←\fP \fB+\fP \fIB\fP : a \fBreturned\fP \fBfront foot\fP kick.
+.IP \(bu 2
+\fI↑\fP \fB+\fP \fIB\fP : a \fBfront foot\fP kick \fBto head\fP\&.
+.IP \(bu 2
+\fI↓\fP \fB+\fP \fIB\fP : a \fBfront foot\fP kick \fBto knees\fP\&.
+.UNINDENT
+.sp
+\fBfront foot\fP kicks:
+.nf
+
+.fi
+.sp
+.INDENT 0.0
+.IP \(bu 2
+\fI→\fP \fB+\fP \fIY\fP : a \fBback foot\fP kick to \fBbody\fP\&.
+.IP \(bu 2
+\fI←\fP \fB+\fP \fIY\fP : a \fBreturned\fP \fBback foot\fP kick.
+.IP \(bu 2
+\fI↑\fP \fB+\fP \fIY\fP : a \fBback foot\fP kick \fBto head\fP\&.
+.IP \(bu 2
+\fI↓\fP \fB+\fP \fIY\fP : a \fBback foot\fP kick \fBto knees\fP\&.
+.UNINDENT
+.sp
+\fBWARNING:\fP
+.INDENT 0.0
+.INDENT 3.5
+because \fBnothing is perfect\fP it can happen that a combination don\(aqt really
+.sp
+represent what it should like explain above.
+.sp
+But \fBI guarantee\fP that it really \fBdoesn\(aqt happen often\fP and that the replacement \fBis near from your expecting\fP\&.
+.sp
+And some kicks have fallbacks: this mean that 2 differents combination can give the same kick: not often.
+.sp
+All according the fighter.
+.UNINDENT
+.UNINDENT
+.SH BUGS
+.INDENT 0.0
+.INDENT 3.5
+Report bug to <\fI\%mrcyberfighter@gmail.com\fP>
+.sp
+or open an issue at:
+.sp
+<\fI\%https://github.com/mrcyberfighter/battle\-rage\fP>
+.UNINDENT
+.UNINDENT
+.SH SEA ALSO
+.INDENT 0.0
+.INDENT 3.5
+Homepage:
+.sp
+<\fI\%http://www.open\-source\-projects.net/battle\-rage/battle\-rage\fP>
+.sp
+The full documentation of \fIbattle\-rage\fP is maintained as a \fBTexinfo\fP  manual.
+.sp
+If the info and makeinfo programs are properly installed at your site,
+.sp
+the command:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+info battle\-rage
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+should give you access to the complete manual.
+.sp
+Which is integrated as \fBHTML\fP document into the program \fIbattle\-rage\fP too.
+.UNINDENT
+.UNINDENT
+.SH AUTHOR
+.INDENT 0.0
+.INDENT 3.5
+Brüggemann Eddie <\fI\%mrcyberfighter@gmail.com\fP>
+.UNINDENT
+.UNINDENT
+.SH COPYRIGHT
+.INDENT 0.0
+.INDENT 3.5
+Copyright (©) Brüggemann Eddie 2016 GPLv3.
+.UNINDENT
+.UNINDENT
+.\" Generated by docutils manpage writer.
+.

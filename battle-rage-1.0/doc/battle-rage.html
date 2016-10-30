@@ -1,0 +1,1733 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- battle-rage 1.0, October 10, 2016
+
+Brüggemann Eddie
+
+Copyright (C) 2016, Brüggemann Eddie
+ -->
+<!-- Created by GNU Texinfo 6.1, http://www.gnu.org/software/texinfo/ -->
+<head>
+<title>battle-rage Documentation</title>
+
+<meta name="description" content="battle-rage Documentation">
+<meta name="keywords" content="battle-rage Documentation">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="#Top" rel="start" title="Top">
+<link href="#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="dir.html#Top" rel="up" title="(dir)">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<h1 class="settitle" align="center">battle-rage Documentation</h1>
+
+
+
+<a name="SEC_Contents"></a>
+<h2 class="contents-heading">Table of Contents</h2>
+
+<div class="contents">
+
+<ul class="no-bullet">
+  <li><a name="toc-battle_002drage-notice-1" href="#battle_002drage-notice">1 <code>battle-rage</code> notice</a>
+  <ul class="no-bullet">
+    <li><a name="toc-battle_002drage_003a-the-battle-rages-on-_0021" href="#battle_002drage-the-battle-rages-on-_0021">1.1 <code>battle-rage</code>: the battle rages on !</a>
+    <ul class="no-bullet">
+      <li><a name="toc-battle_002drage-different-fighters-properties-1" href="#battle_002drage-different-fighters-properties">1.1.1 <code>battle-rage</code> different fighters properties</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a name="toc-battle_002drage_003a-the-game" href="#battle_002drage-the-game">2 <code>battle-rage</code>: the game</a>
+  <ul class="no-bullet">
+    <li><a name="toc-The-presentation-screen-1" href="#The-presentation-screen">2.1 The presentation screen</a></li>
+    <li><a name="toc-The-joystick-configuration-screen-1" href="#The-joystick-configuration-screen">2.2 The joystick configuration screen</a></li>
+    <li><a name="toc-The-main-menu-1" href="#The-main-menu">2.3 The main menu</a></li>
+    <li><a name="toc-Configure-game-1" href="#Configure-game">2.4 Configure game</a></li>
+    <li><a name="toc-Reconfigure-joystick-1" href="#Reconfigure-joystick">2.5 Reconfigure joystick</a></li>
+    <li><a name="toc-Read-notice-1" href="#Read-notice">2.6 Read notice</a></li>
+    <li><a name="toc-The-choose-fighter-screen-1" href="#The-choose-fighter-screen">2.7 The choose fighter screen</a></li>
+    <li><a name="toc-Fighting-1" href="#Fighting">2.8 Fighting</a></li>
+  </ul></li>
+  <li><a name="toc-battle_002drage-fighters-1" href="#battle_002drage-fighters">3 <code>battle-rage</code> fighters</a>
+  <ul class="no-bullet">
+    <li><a name="toc-Speed-1" href="#Speed">3.1 Speed</a></li>
+    <li><a name="toc-Aggressiveness-1" href="#Aggressiveness">3.2 Aggressiveness</a></li>
+    <li><a name="toc-Force-1" href="#Force">3.3 Force</a></li>
+    <li><a name="toc-Resistance-1" href="#Resistance">3.4 Resistance</a></li>
+  </ul></li>
+  <li><a name="toc-battle_002drage-fighting-1" href="#battle_002drage-fighting">4 <code>battle-rage</code> fighting</a>
+  <ul class="no-bullet">
+    <li><a name="toc-Introduction_003a" href="#Introduction">4.1 Introduction:</a></li>
+    <li><a name="toc-Simple-combinations_003a" href="#Simple-combinations">4.2 Simple *combinations*:</a></li>
+    <li><a name="toc-Direction-_002b-Button-combinations_003a" href="#Direction-_002b-Button-combinations">4.3 Direction + Button *combinations*:</a>
+    <ul class="no-bullet">
+      <li><a name="toc-back-hand-kicks_003a" href="#back-hand-kicks">4.3.1 *back hand* kicks:</a></li>
+      <li><a name="toc-front-hand-kicks_003a" href="#front-hand-kicks">4.3.2 *front hand* kicks:</a></li>
+      <li><a name="toc-front-foot-kicks_003a" href="#front-foot-kicks">4.3.3 *front foot* kicks:</a></li>
+      <li><a name="toc-front-foot-kicks_003a-1" href="#front-foot-kicks_003c2_003e">4.3.4 *front foot* kicks:</a></li>
+    </ul></li>
+  </ul></li>
+  <li><a name="toc-Joystick_0028s_0029-logic-of-battle_002drage" href="#Joystick-s-logic-of-battle_002drage">5 Joystick(s) logic of <code>battle-rage</code></a>
+  <ul class="no-bullet">
+    <li><a name="toc-The-joystick-plan_003a" href="#The-joystick-plan">5.1 The joystick plan:</a></li>
+    <li><a name="toc-battle_002drage-joystick-usage-1" href="#battle_002drage-joystick-usage">5.2 <code>battle-rage</code> joystick usage</a></li>
+    <li><a name="toc-battle_002drage-and-his-joystick-rules-1" href="#battle_002drage-and-his-joystick-rules">5.3 <code>battle-rage</code> and his joystick rules</a></li>
+    <li><a name="toc-The-different-joysticks-models-handling-1" href="#The-different-joysticks-models-handling">5.4 The different joysticks models handling</a></li>
+    <li><a name="toc-Advice_003a" href="#Advice">5.5 Advice:</a></li>
+    <li><a name="toc-If-the-joystick-configuration-fail_002e" href="#If-the-joystick-configuration-fail">5.6 If the joystick configuration fail.</a></li>
+    <li><a name="toc-Technical-notes-about-joystick-handle_002e" href="#Technical-notes-about-joystick-handle">5.7 Technical notes about joystick handle.</a></li>
+  </ul></li>
+  <li><a name="toc-Images-of-the-fighters-from-battle_002drage-1" href="#Images-of-the-fighters-from-battle_002drage">6 Images of the fighters from <code>battle-rage</code></a>
+  <ul class="no-bullet">
+    <li><a name="toc-Fuuma-1" href="#Fuuma">6.1 Fuuma</a></li>
+    <li><a name="toc-Geese-Howard-1" href="#Geese-Howard">6.2 Geese Howard</a></li>
+    <li><a name="toc-Hanzo-1" href="#Hanzo">6.3 Hanzo</a></li>
+    <li><a name="toc-Hotaru-Futaba-1" href="#Hotaru-Futaba">6.4 Hotaru Futaba</a></li>
+    <li><a name="toc-Iori-Yagami-1" href="#Iori-Yagami">6.5 Iori Yagami</a></li>
+    <li><a name="toc-Kim-Kaphwan-1" href="#Kim-Kaphwan">6.6 Kim Kaphwan</a></li>
+    <li><a name="toc-Kisarah-Westfield-1" href="#Kisarah-Westfield">6.7 Kisarah Westfield</a></li>
+    <li><a name="toc-K-1" href="#K">6.8 K</a></li>
+    <li><a name="toc-Kyo-Kusanagi-1" href="#Kyo-Kusanagi">6.9 Kyo Kusanagi</a></li>
+    <li><a name="toc-Lee-Pai-Long-1" href="#Lee-Pai-Long">6.10 Lee Pai Long</a></li>
+    <li><a name="toc-Mai-Shiranui-1" href="#Mai-Shiranui">6.11 Mai Shiranui</a></li>
+    <li><a name="toc-Mr-Big-1" href="#Mr-Big">6.12 Mr Big</a></li>
+    <li><a name="toc-Mr-Karate-1" href="#Mr-Karate">6.13 Mr Karate</a></li>
+    <li><a name="toc-Robert-Garcia-1" href="#Robert-Garcia">6.14 Robert Garcia</a></li>
+    <li><a name="toc-Rock-Howard-1" href="#Rock-Howard">6.15 Rock Howard</a></li>
+    <li><a name="toc-Terry-Bogard-1" href="#Terry-Bogard">6.16 Terry Bogard</a></li>
+  </ul></li>
+  <li><a name="toc-battle_002drage-credits-1" href="#battle_002drage-credits">7 <code>battle-rage</code> credits</a>
+  <ul class="no-bullet">
+    <li><a name="toc-Ressources-1" href="#Ressources">7.1 Ressources</a>
+    <ul class="no-bullet">
+      <li><a name="toc-Images-1" href="#Images">7.1.1 Images</a></li>
+      <li><a name="toc-Sounds-1" href="#Sounds">7.1.2 Sounds</a></li>
+      <li><a name="toc-Others-1" href="#Others">7.1.3 Others</a></li>
+    </ul></li>
+    <li><a name="toc-Credits-1" href="#Credits">7.2 Credits</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+<a name="Top"></a>
+<div class="header">
+<p>
+Next: <a href="#battle_002drage-notice" accesskey="n" rel="next">battle-rage notice</a>, Up: <a href="dir.html#Top" accesskey="u" rel="up">(dir)</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage-Documentation"></a>
+<h1 class="top">battle-rage Documentation</h1>
+<blockquote>
+<p>battle-rage 1.0, October 10, 2016
+</p>
+<p>Brüggemann Eddie
+</p>
+<p>Copyright &copy; 2016, Brüggemann Eddie
+</p></blockquote>
+
+
+
+<a name="notice-doc"></a><a name="g_t0"></a>
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="#battle_002drage-notice" accesskey="1">battle-rage notice</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#battle_002drage-the-game" accesskey="2">battle-rage; the game</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#battle_002drage-fighters" accesskey="3">battle-rage fighters</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#battle_002drage-fighting" accesskey="4">battle-rage fighting</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Joystick-s-logic-of-battle_002drage" accesskey="5">Joystick(s) logic of battle-rage</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="6">Images of the fighters from battle-rage</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#battle_002drage-credits" accesskey="7">battle-rage credits</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+</pre></th></tr><tr><th colspan="3" align="left" valign="top"><pre class="menu-comment"> &mdash; The Detailed Node Listing &mdash;
+
+battle-rage notice
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#battle_002drage-the-battle-rages-on-_0021" accesskey="8">battle-rage; the battle rages on !</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+battle-rage: the battle rages on !
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#battle_002drage-different-fighters-properties" accesskey="9">battle-rage different fighters properties</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+battle-rage: the game
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#The-presentation-screen">The presentation screen</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#The-joystick-configuration-screen">The joystick configuration screen</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#The-main-menu">The main menu</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Configure-game">Configure game</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Reconfigure-joystick">Reconfigure joystick</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Read-notice">Read notice</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#The-choose-fighter-screen">The choose fighter screen</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Fighting">Fighting</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+battle-rage fighters
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#Speed">Speed</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Aggressiveness">Aggressiveness</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Force">Force</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Resistance">Resistance</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+battle-rage fighting
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#Introduction">Introduction;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Simple-combinations">Simple combinations;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Direction-_002b-Button-combinations">Direction + Button combinations;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+Direction + Button combinations:
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#back-hand-kicks">back hand kicks;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#front-hand-kicks">front hand kicks;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#front-foot-kicks">front foot kicks;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#front-foot-kicks_003c2_003e">front foot kicks;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+Joystick(s) logic of battle-rage
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#The-joystick-plan">The joystick plan;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#battle_002drage-joystick-usage">battle-rage joystick usage</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#battle_002drage-and-his-joystick-rules">battle-rage and his joystick rules</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#The-different-joysticks-models-handling">The different joysticks models handling</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Advice">Advice;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#If-the-joystick-configuration-fail">If the joystick configuration fail.</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Technical-notes-about-joystick-handle">Technical notes about joystick handle.</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+Images of the fighters from battle-rage
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#Fuuma">Fuuma</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Geese-Howard">Geese Howard</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Hanzo">Hanzo</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Hotaru-Futaba">Hotaru Futaba</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Iori-Yagami">Iori Yagami</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Kim-Kaphwan">Kim Kaphwan</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Kisarah-Westfield">Kisarah Westfield</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#K">K</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Kyo-Kusanagi">Kyo Kusanagi</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Lee-Pai-Long">Lee Pai Long</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Mai-Shiranui">Mai Shiranui</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Mr-Big">Mr Big</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Mr-Karate">Mr Karate</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Robert-Garcia">Robert Garcia</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Rock-Howard">Rock Howard</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Terry-Bogard">Terry Bogard</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+battle-rage credits
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#Ressources">Ressources</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Credits">Credits</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+Ressources
+
+</pre></th></tr><tr><td align="left" valign="top">&bull; <a href="#Images">Images</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Sounds">Sounds</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Others">Others</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+</pre></th></tr></table>
+
+<hr>
+<a name="battle_002drage-notice"></a>
+<div class="header">
+<p>
+Next: <a href="#battle_002drage-the-game" accesskey="n" rel="next">battle-rage the game</a>, Previous: <a href="#Top" accesskey="p" rel="prev">Top</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fpresentation-battle_002drage_002dnotice"></a><a name="g_t1"></a><a name="battle_002drage_005fpresentation-welcome_002dto_002dbattle_002drage_002ds_002ddocumentation"></a><a name="g_t2"></a><a name="battle_002drage_005fpresentation-doc"></a><a name="g_t3"></a><a name="battle_002drage-notice-1"></a>
+<h2 class="chapter">1 <code>battle-rage</code> notice</h2>
+
+
+<br><p>Author: 
+Brüggemann Eddie &lt;<a href="mailto:mrcyberfighter@gmail.com">mrcyberfighter@gmail.com</a>&gt;
+</p>
+
+<br><p>Language: 
+C++
+</p>
+
+<br><p>Realease: 
+October 10, 2016
+</p>
+
+<br><p>Copyright: 
+Brüggemann Eddie 2016 (C) GPLv3.
+</p>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="#battle_002drage-the-battle-rages-on-_0021" accesskey="1">battle-rage; the battle rages on !</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+</pre></th></tr></table>
+
+<hr>
+<a name="battle_002drage-the-battle-rages-on-_0021"></a>
+<div class="header">
+<p>
+Up: <a href="#battle_002drage-notice" accesskey="u" rel="up">battle-rage notice</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fpresentation-battle_002drage_002dthe_002dbattle_002drages_002don"></a><a name="g_t4"></a><a name="battle_002drage_003a-the-battle-rages-on-_0021"></a>
+<h3 class="section">1.1 <code>battle-rage</code>: the battle rages on !</h3>
+
+
+<img src="battle-rage_presentation_screen.png" alt="battle-rage_presentation_screen">
+
+<p><code>battle-rage</code> is a *fighting game* providing *16* different *fighters*,
+</p>
+<p>with all having differrent properties and sort of kicks:
+<a name="battle_002drage_005fpresentation-fighters_002dlist"></a><a name="g_t5"></a></p><blockquote>
+
+
+<ol>
+<li> <a href="#g_t6">Fuuma</a>
+
+</li><li> <a href="#g_t7">Geese Howard</a>
+
+</li><li> <a href="#g_t8">Hanzo</a>
+
+</li><li> <a href="#g_t9">Hotaru Futaba</a>
+
+</li><li> <a href="#a">Iori Yagami</a>
+
+</li><li> <a href="#b">Kim Kaphwan</a>
+
+</li><li> <a href="#c">Kisarah Westfield</a>
+
+</li><li> <a href="#d">K</a>
+
+</li><li> <a href="#e">Kyo Kusanagi</a>
+
+</li><li> <a href="#f">Lee Pai Long</a>
+
+</li><li> <a href="#g_t10">Mai Shiranui</a>
+
+</li><li> <a href="#g_t11">Mr Big</a>
+
+</li><li> <a href="#g_t12">Mr Karate</a>
+
+</li><li> <a href="#g_t13">Robert Garcia</a>
+
+</li><li> <a href="#g_t14">Rock Howard</a>
+
+</li><li> <a href="#g_t15">Terry Bogard</a>
+</li></ol>
+</blockquote>
+
+<p>*playable with joystick(s)*,
+</p>
+<p>and you can play: *against* the _computer_ like _another player_ and let the *computer* _fight against_ the *computer*.
+</p>
+<table class="cartouche" border="1"><tr><td>
+<blockquote>
+<p><b>Warning:</b> You must have a *joystick* to control <code>battle-rage</code>.
+</p>
+<p>And the *keyboard* is a little bit used: per example for _pausing the game_ you must press the <code>Space Bar</code>.
+</p></blockquote>
+</td></tr></table>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="#battle_002drage-different-fighters-properties" accesskey="1">battle-rage different fighters properties</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+</pre></th></tr></table>
+
+<hr>
+<a name="battle_002drage-different-fighters-properties"></a>
+<div class="header">
+<p>
+Up: <a href="#battle_002drage-the-battle-rages-on-_0021" accesskey="u" rel="up">battle-rage the battle rages on !</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fpresentation-battle_002drage_002ddifferent_002dfighters_002dproperties"></a><a name="g_t16"></a><a name="battle_002drage-different-fighters-properties-1"></a>
+<h4 class="subsection">1.1.1 <code>battle-rage</code> different fighters properties</h4>
+
+
+<blockquote>
+
+<p><code>battle-rage</code> provide a choice of *16* <a href="#g_t5">different fighters</a> which all have some different values
+</p>
+<p>for the following listed properties:
+</p>
+
+<ul class="no-bullet">
+<li>+ <a href="#g_t17">Force</a>.
+
+</li><li>+ <a href="#g_t18">Tendency to attack (aggresiveness)</a>.
+
+</li><li>+ <a href="#g_t19">Resistance</a>.
+
+</li><li>+ <a href="#g_t1a">Speed</a>.
+</li></ul>
+
+<p>Some of the fighters are equiped with weapons from different kind: a baton, a bag, a janapense hand fan,...
+</p>
+<p>and some others does fight entirely with the feets and the hands.
+</p></blockquote>
+
+<hr>
+<a name="battle_002drage-the-game"></a>
+<div class="header">
+<p>
+Next: <a href="#battle_002drage-fighters" accesskey="n" rel="next">battle-rage fighters</a>, Previous: <a href="#battle_002drage-notice" accesskey="p" rel="prev">battle-rage notice</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fgame-doc"></a><a name="g_t1b"></a><a name="battle_002drage_005fgame-battle_002drage_002dthe_002dgame"></a><a name="g_t1c"></a><a name="battle_002drage_003a-the-game"></a>
+<h2 class="chapter">2 <code>battle-rage</code>: the game</h2>
+
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="#The-presentation-screen" accesskey="1">The presentation screen</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#The-joystick-configuration-screen" accesskey="2">The joystick configuration screen</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#The-main-menu" accesskey="3">The main menu</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Configure-game" accesskey="4">Configure game</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Reconfigure-joystick" accesskey="5">Reconfigure joystick</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Read-notice" accesskey="6">Read notice</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#The-choose-fighter-screen" accesskey="7">The choose fighter screen</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Fighting" accesskey="8">Fighting</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+</pre></th></tr></table>
+
+<hr>
+<a name="The-presentation-screen"></a>
+<div class="header">
+<p>
+Next: <a href="#The-joystick-configuration-screen" accesskey="n" rel="next">The joystick configuration screen</a>, Up: <a href="#battle_002drage-the-game" accesskey="u" rel="up">battle-rage the game</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fgame-the_002dpresentation_002dscreen"></a><a name="g_t1d"></a><a name="The-presentation-screen-1"></a>
+<h3 class="section">2.1 The presentation screen</h3>
+
+
+<blockquote>
+
+<p><code>battle-rage</code> starts with the *presentation screen* after checking a joystick is right pluggged.
+</p>
+<table class="cartouche" border="1"><tr><td>
+<blockquote>
+<p><b>Note:</b> The first time you launch <code>battle-rage</code> or everytime you plug a new joystick model,
+</p>
+<p>you must configure the joystick.
+</p>
+<p><a href="#g_t1e">A joystick configuration screen will appear to do so.</a>
+</p></blockquote>
+</td></tr></table>
+</blockquote>
+
+
+<div class="display">
+<pre class="display"> <!-- /@w -->
+</pre></div>
+
+
+
+<blockquote>
+
+<p>Pressing <code>ESCAPE</code> in the *presentation window* is the only way to *quit the game*.
+</p>
+<p>Else if you press <code>ESCAPE</code> you will return to the *presentation screen*.
+</p></blockquote>
+
+
+<div class="display">
+<pre class="display"> <!-- /@w -->
+</pre></div>
+
+
+
+<blockquote>
+
+<p>You can navigate through the items using the *directional pad* from your joystick,
+</p>
+<p>and confirm by pressing a joystick button or <code>ENTER</code> into the menus and to quit the interludes.
+</p></blockquote>
+
+<hr>
+<a name="The-joystick-configuration-screen"></a>
+<div class="header">
+<p>
+Next: <a href="#The-main-menu" accesskey="n" rel="next">The main menu</a>, Previous: <a href="#The-presentation-screen" accesskey="p" rel="prev">The presentation screen</a>, Up: <a href="#battle_002drage-the-game" accesskey="u" rel="up">battle-rage the game</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fgame-the_002djoystick_002dconfiguration_002dscreen"></a><a name="g_t1f"></a><a name="The-joystick-configuration-screen-1"></a>
+<h3 class="section">2.2 The joystick configuration screen</h3>
+
+
+<blockquote>
+
+<img src="joystick_battle-rage.png" alt="joystick_battle-rage">
+
+<p>At first you will have to press the button corresponding to the blinking button on the screen.
+</p>
+
+<ul class="no-bullet">
+<li>+ A
+
+</li><li>+ B
+
+</li><li>+ X
+
+</li><li>+ Y
+</li></ul>
+
+<p>And then the same with the directional pad in every directions:
+</p>
+
+<ul class="no-bullet">
+<li>+ Right.
+
+</li><li>+ Left.
+
+</li><li>+ Up.
+
+</li><li>+ Down.
+</li></ul>
+</blockquote>
+
+<hr>
+<a name="The-main-menu"></a>
+<div class="header">
+<p>
+Next: <a href="#Configure-game" accesskey="n" rel="next">Configure game</a>, Previous: <a href="#The-joystick-configuration-screen" accesskey="p" rel="prev">The joystick configuration screen</a>, Up: <a href="#battle_002drage-the-game" accesskey="u" rel="up">battle-rage the game</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fgame-the_002dmain_002dmenu"></a><a name="g_t20"></a><a name="The-main-menu-1"></a>
+<h3 class="section">2.3 The main menu</h3>
+
+
+<blockquote>
+
+<p>The main menu is composed from following items:
+</p>
+
+<ul class="no-bullet">
+<li>+ *Play*
+
+
+<ul class="no-bullet">
+<li>- *Player vs Computer*.
+
+</li><li>- *Player vs Player*.
+
+</li><li>- *Computer vs Computer*.
+</li></ul>
+
+</li><li>+ *Configure game.*
+
+</li><li>+ *Reconfigure joystick.*
+
+</li><li>+ *Read Notice.*
+</li></ul>
+
+<br><p>note: 
+Selelecting directly *Play* or *Player vs Computer* is the same.
+</p>
+</blockquote>
+
+<hr>
+<a name="Configure-game"></a>
+<div class="header">
+<p>
+Next: <a href="#Reconfigure-joystick" accesskey="n" rel="next">Reconfigure joystick</a>, Previous: <a href="#The-main-menu" accesskey="p" rel="prev">The main menu</a>, Up: <a href="#battle_002drage-the-game" accesskey="u" rel="up">battle-rage the game</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fgame-configure_002dgame"></a><a name="g_t21"></a><a name="Configure-game-1"></a>
+<h3 class="section">2.4 Configure game</h3>
+
+
+<blockquote>
+
+<p>The configure game menu is composed from following settable items:
+</p>
+
+<ul class="no-bullet">
+<li>+ *Game difficulty:* _EASY_ */* _NORMAL_ */* _HARD_ */* _MISC_.
+
+</li><li>+ *Game speed:* _SLOW_ */* _NORMAL_ */* _FAST_.
+
+</li><li>+ *Game sounds:* _ON_ */* _OFF_.
+
+</li><li>+ *Game music:* _ON_ */* _OFF_.
+
+</li><li>+ *Save and Exit.*
+
+</li><li>+ *Exit without saving.*
+</li></ul>
+
+<br><p>difficulty: 
+The _MISC_ mode set all properties from all <a href="#g_t22">Fighters</a> to the same value.
+</p>
+</blockquote>
+
+<hr>
+<a name="Reconfigure-joystick"></a>
+<div class="header">
+<p>
+Next: <a href="#Read-notice" accesskey="n" rel="next">Read notice</a>, Previous: <a href="#Configure-game" accesskey="p" rel="prev">Configure game</a>, Up: <a href="#battle_002drage-the-game" accesskey="u" rel="up">battle-rage the game</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fgame-reconfigure_002djoystick"></a><a name="g_t23"></a><a name="Reconfigure-joystick-1"></a>
+<h3 class="section">2.5 Reconfigure joystick</h3>
+
+
+<blockquote>
+
+<p>Will permit you to reconfigure a joystick if you have made an error during the primary configuration.
+</p></blockquote>
+
+<hr>
+<a name="Read-notice"></a>
+<div class="header">
+<p>
+Next: <a href="#The-choose-fighter-screen" accesskey="n" rel="next">The choose fighter screen</a>, Previous: <a href="#Reconfigure-joystick" accesskey="p" rel="prev">Reconfigure joystick</a>, Up: <a href="#battle_002drage-the-game" accesskey="u" rel="up">battle-rage the game</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fgame-read_002dnotice"></a><a name="g_t24"></a><a name="Read-notice-1"></a>
+<h3 class="section">2.6 Read notice</h3>
+
+
+<blockquote>
+
+<p>Will launch this notice into your web <code>browser</code>.
+</p></blockquote>
+
+<hr>
+<a name="The-choose-fighter-screen"></a>
+<div class="header">
+<p>
+Next: <a href="#Fighting" accesskey="n" rel="next">Fighting</a>, Previous: <a href="#Read-notice" accesskey="p" rel="prev">Read notice</a>, Up: <a href="#battle_002drage-the-game" accesskey="u" rel="up">battle-rage the game</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fgame-the_002dchoose_002dfighter_002dscreen"></a><a name="g_t25"></a><a name="The-choose-fighter-screen-1"></a>
+<h3 class="section">2.7 The choose fighter screen</h3>
+
+
+<blockquote>
+
+<p>Here you can select a fighter as:
+</p>
+
+<ul class="no-bullet">
+<li>+ *Player*.
+
+</li><li>+ *Adversary*.
+
+</li><li>+ *Computer player*.
+</li></ul>
+
+<p>With the arrows of the directional pad of your joystick.
+</p>
+<p>Pressing <code>RETURN (Enter)</code> will activate the <code>random fighter selection</code>.
+</p></blockquote>
+
+<hr>
+<a name="Fighting"></a>
+<div class="header">
+<p>
+Previous: <a href="#The-choose-fighter-screen" accesskey="p" rel="prev">The choose fighter screen</a>, Up: <a href="#battle_002drage-the-game" accesskey="u" rel="up">battle-rage the game</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fgame-fighting"></a><a name="g_t26"></a><a name="Fighting-1"></a>
+<h3 class="section">2.8 Fighting</h3>
+
+
+<blockquote>
+
+<p><a href="#g_t27">All joystick combinations are explain here</a> and you can pause the game by pressing the <code>SPACE</code> bar.
+</p></blockquote>
+
+<hr>
+<a name="battle_002drage-fighters"></a>
+<div class="header">
+<p>
+Next: <a href="#battle_002drage-fighting" accesskey="n" rel="next">battle-rage fighting</a>, Previous: <a href="#battle_002drage-the-game" accesskey="p" rel="prev">battle-rage the game</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005ffighters-doc"></a><a name="g_t28"></a><a name="battle_002drage_005ffighters-battle_002drage_002dfighters"></a><a name="g_t29"></a><a name="battle_002drage-fighters-1"></a>
+<h2 class="chapter">3 <code>battle-rage</code> fighters</h2>
+
+
+<p><a href="#g_t22">All fighters</a> have some properties:
+</p>
+
+<ul class="no-bullet">
+<li>+ <code>Speed</code>
+
+</li><li>+ <code>Aggressiveness</code>
+
+</li><li>+ <code>Force</code>
+
+</li><li>+ <code>Resistance</code>
+</li></ul>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="#Speed" accesskey="1">Speed</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Aggressiveness" accesskey="2">Aggressiveness</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Force" accesskey="3">Force</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Resistance" accesskey="4">Resistance</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+</pre></th></tr></table>
+
+<hr>
+<a name="Speed"></a>
+<div class="header">
+<p>
+Next: <a href="#Aggressiveness" accesskey="n" rel="next">Aggressiveness</a>, Up: <a href="#battle_002drage-fighters" accesskey="u" rel="up">battle-rage fighters</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005ffighters-property_002dspeed"></a><a name="g_t1a"></a><a name="battle_002drage_005ffighters-speed"></a><a name="g_t2a"></a><a name="Speed-1"></a>
+<h3 class="section">3.1 Speed</h3>
+
+
+<p>The speed indicate the speed the fighter <code>moves</code> *forward* or *backward*.
+</p>
+<p>And how much _(speed / 3.75)_ the fighter *advance* in direction to the *adversary* when he *give a kick*.
+</p>
+<br><p>note: 
+The *speed* values are comprise between: [*10*-*15*].
+</p>
+
+<hr>
+<a name="Aggressiveness"></a>
+<div class="header">
+<p>
+Next: <a href="#Force" accesskey="n" rel="next">Force</a>, Previous: <a href="#Speed" accesskey="p" rel="prev">Speed</a>, Up: <a href="#battle_002drage-fighters" accesskey="u" rel="up">battle-rage fighters</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005ffighters-property_002daggresiveness"></a><a name="g_t18"></a><a name="battle_002drage_005ffighters-aggressiveness"></a><a name="g_t2b"></a><a name="Aggressiveness-1"></a>
+<h3 class="section">3.2 Aggressiveness</h3>
+
+
+<p>This property is only take into account when the fighter is the computer.
+</p>
+<p>And indicate how aggresiv the fighter is.
+</p>
+<br><p>note: 
+The aggressiveness value is a percent.
+</p>
+
+<hr>
+<a name="Force"></a>
+<div class="header">
+<p>
+Next: <a href="#Resistance" accesskey="n" rel="next">Resistance</a>, Previous: <a href="#Aggressiveness" accesskey="p" rel="prev">Aggressiveness</a>, Up: <a href="#battle_002drage-fighters" accesskey="u" rel="up">battle-rage fighters</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005ffighters-force"></a><a name="g_t2c"></a><a name="battle_002drage_005ffighters-property_002dforce"></a><a name="g_t17"></a><a name="Force-1"></a>
+<h3 class="section">3.3 Force</h3>
+
+
+<p>The force indicate how much damage the fighter inflict to his adversary minus the adversary resistance.
+</p>
+<br><p>note: 
+The fighter force is comprise between [*0.80*-*1.30*].
+</p>
+
+<hr>
+<a name="Resistance"></a>
+<div class="header">
+<p>
+Previous: <a href="#Force" accesskey="p" rel="prev">Force</a>, Up: <a href="#battle_002drage-fighters" accesskey="u" rel="up">battle-rage fighters</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005ffighters-property_002dresistance"></a><a name="g_t19"></a><a name="battle_002drage_005ffighters-resistance"></a><a name="g_t2d"></a><a name="Resistance-1"></a>
+<h3 class="section">3.4 Resistance</h3>
+
+
+<p>The fighter resistance indicate how much life points the fighter he will lose when he receive a kick.
+</p>
+<br><p>note: 
+The resistance value is comprise between: [*0.75*-*1.25*].
+</p>
+
+<table class="cartouche" border="1"><tr><td>
+<blockquote>
+<p><b>Note:</b> When the fighter kick the ass of his adversary and this one is not protected
+</p>
+<p>The life points ferom the adversary are reduce in this manner:
+</p>
+<div class="example">
+<pre class="example">([Value of the kick] × [force]) - ([Resistance common value] × [resistance]) ;
+</pre></div>
+</blockquote>
+</td></tr></table>
+
+<hr>
+<a name="battle_002drage-fighting"></a>
+<div class="header">
+<p>
+Next: <a href="#Joystick-s-logic-of-battle_002drage" accesskey="n" rel="next">Joystick s logic of battle-rage</a>, Previous: <a href="#battle_002drage-fighters" accesskey="p" rel="prev">battle-rage fighters</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005ffighting-battle_002drage_002dfighting"></a><a name="g_t2e"></a><a name="battle_002drage_005ffighting-doc"></a><a name="g_t2f"></a><a name="battle_002drage-fighting-1"></a>
+<h2 class="chapter">4 <code>battle-rage</code> fighting</h2>
+
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="#Introduction" accesskey="1">Introduction;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Simple-combinations" accesskey="2">Simple combinations;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Direction-_002b-Button-combinations" accesskey="3">Direction + Button combinations;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+</pre></th></tr></table>
+
+<hr>
+<a name="Introduction"></a>
+<div class="header">
+<p>
+Next: <a href="#Simple-combinations" accesskey="n" rel="next">Simple combinations</a>, Up: <a href="#battle_002drage-fighting" accesskey="u" rel="up">battle-rage fighting</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005ffighting-introduction"></a><a name="g_t30"></a><a name="Introduction_003a"></a>
+<h3 class="section">4.1 Introduction:</h3>
+
+
+<p><a href="#g_t22">All fighters</a> have a common <a href="#g_t31">set of kicks</a> in relationship
+</p>
+<p>to the joystick button with or without a direction bouton, on the directional pad from your joystick:
+</p>
+<img src="joystick_battle-rage.png" alt="joystick_battle-rage">
+
+
+<ul class="no-bullet">
+<li>+ The *back hand* from your fighter is *activate* by <code>pressing</code> the A button from the _joystick_.
+
+</li><li>+ The *front hand* from your fighter  is *activate* by <code>pressing</code> the X button from the _joystick_.
+
+</li><li>+ The *front leg* from your fighter is *activate* by <code>pressing</code> the B button from the _joystick_.
+
+</li><li>+ The *back leg* from your fighter is *activate* by <code>pressing</code> the Y button from the _joystick_.
+</li></ul>
+
+<br><p>note: 
+</p>
+<p>So you get the following differents combinations:
+</p>
+<hr>
+<a name="Simple-combinations"></a>
+<div class="header">
+<p>
+Next: <a href="#Direction-_002b-Button-combinations" accesskey="n" rel="next">Direction + Button combinations</a>, Previous: <a href="#Introduction" accesskey="p" rel="prev">Introduction</a>, Up: <a href="#battle_002drage-fighting" accesskey="u" rel="up">battle-rage fighting</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005ffighting-simple_002dcombinations"></a><a name="g_t32"></a><a name="battle_002drage_005ffighting-fighting_002djoytsick_002dcombination"></a><a name="g_t27"></a><a name="Simple-combinations_003a"></a>
+<h3 class="section">4.2 Simple *combinations*:</h3>
+
+
+
+<ul class="no-bullet">
+<li>- Only A: a *back hand* kick.
+
+</li><li>- Only X: a *front hand* kick.
+
+</li><li>- Only B: a *front leg* kick.
+
+</li><li>- Only Y: a *front leg* kick.
+
+</li><li>- Only →: the <code>fighter</code> *moves* in direction *right*.
+
+</li><li>- Only ←: the <code>fighter</code> *moves* in direction *left*.
+
+</li><li>- Only ↓: the <code>fighter</code> goes *down*: on his knees.
+</li></ul>
+
+<br><p>note: 
+The ↑ is not used for jumping: some combination makes the fighter jumping.
+</p>
+
+<hr>
+<a name="Direction-_002b-Button-combinations"></a>
+<div class="header">
+<p>
+Previous: <a href="#Simple-combinations" accesskey="p" rel="prev">Simple combinations</a>, Up: <a href="#battle_002drage-fighting" accesskey="u" rel="up">battle-rage fighting</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005ffighting-direction_002dbutton_002dcombinations"></a><a name="g_t33"></a><a name="Direction-_002b-Button-combinations_003a"></a>
+<h3 class="section">4.3 Direction + Button *combinations*:</h3>
+
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="#back-hand-kicks" accesskey="1">back hand kicks;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#front-hand-kicks" accesskey="2">front hand kicks;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#front-foot-kicks" accesskey="3">front foot kicks;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#front-foot-kicks_003c2_003e" accesskey="4">front foot kicks;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+</pre></th></tr></table>
+
+<hr>
+<a name="back-hand-kicks"></a>
+<div class="header">
+<p>
+Next: <a href="#front-hand-kicks" accesskey="n" rel="next">front hand kicks</a>, Up: <a href="#Direction-_002b-Button-combinations" accesskey="u" rel="up">Direction + Button combinations</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005ffighting-back_002dhand_002dkicks"></a><a name="g_t34"></a><a name="back-hand-kicks_003a"></a>
+<h4 class="subsection">4.3.1 *back hand* kicks:</h4>
+
+
+
+<ul class="no-bullet">
+<li>- → *+* A: a <code>big</code> *back hand* kick.
+
+</li><li>- ← *+* A: <code>protected</code> in standing.
+
+</li><li>- ↑ *+* A: a *back hand* <code>uppercut</code>.
+
+</li><li>- ↓ *+* A:  <code>protected</code> on knees.
+</li></ul>
+
+<hr>
+<a name="front-hand-kicks"></a>
+<div class="header">
+<p>
+Next: <a href="#front-foot-kicks" accesskey="n" rel="next">front foot kicks</a>, Previous: <a href="#back-hand-kicks" accesskey="p" rel="prev">back hand kicks</a>, Up: <a href="#Direction-_002b-Button-combinations" accesskey="u" rel="up">Direction + Button combinations</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005ffighting-front_002dhand_002dkicks"></a><a name="g_t35"></a><a name="front-hand-kicks_003a"></a>
+<h4 class="subsection">4.3.2 *front hand* kicks:</h4>
+
+
+
+<ul class="no-bullet">
+<li>- → *+* X: a <code>big</code> *front hand* kick.
+
+</li><li>- ← *+* X: a <code>returned</code> *front hand* kick.
+
+</li><li>- ↑ *+* X: a *front hand* <code>uppercut</code>.
+
+</li><li>- ↓ *+* X: a *front hand* kick <code>to knees</code>.
+</li></ul>
+
+<hr>
+<a name="front-foot-kicks"></a>
+<div class="header">
+<p>
+Next: <a href="#front-foot-kicks_003c2_003e" accesskey="n" rel="next">front foot kicks&lt;2&gt;</a>, Previous: <a href="#front-hand-kicks" accesskey="p" rel="prev">front hand kicks</a>, Up: <a href="#Direction-_002b-Button-combinations" accesskey="u" rel="up">Direction + Button combinations</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005ffighting-front_002dfoot_002dkicks"></a><a name="g_t36"></a><a name="front-foot-kicks_003a"></a>
+<h4 class="subsection">4.3.3 *front foot* kicks:</h4>
+
+
+
+<ul class="no-bullet">
+<li>- → *+* B: a *front foot* kick to <code>body</code>.
+
+</li><li>- ← *+* B: a <code>returned</code> *front foot* kick.
+
+</li><li>- ↑ *+* B: a *front foot* kick <code>to head</code>.
+
+</li><li>- ↓ *+* B: a *front foot* kick <code>to knees</code>.
+</li></ul>
+
+<hr>
+<a name="front-foot-kicks_003c2_003e"></a>
+<div class="header">
+<p>
+Previous: <a href="#front-foot-kicks" accesskey="p" rel="prev">front foot kicks</a>, Up: <a href="#Direction-_002b-Button-combinations" accesskey="u" rel="up">Direction + Button combinations</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005ffighting-id1"></a><a name="g_t37"></a><a name="front-foot-kicks_003a-1"></a>
+<h4 class="subsection">4.3.4 *front foot* kicks:</h4>
+
+
+
+<ul class="no-bullet">
+<li>- → *+* Y: a *back foot* kick to <code>body</code>.
+
+</li><li>- ← *+* Y: a <code>returned</code> *back foot* kick.
+
+</li><li>- ↑ *+* Y: a *back foot* kick <code>to head</code>.
+
+</li><li>- ↓ *+* Y: a *back foot* kick <code>to knees</code>.
+</li></ul>
+
+<table class="cartouche" border="1"><tr><td>
+<blockquote>
+<p><b>Warning:</b> because <code>nothing is perfect</code> it can happen that a combination don&rsquo;t really
+</p>
+<p>represent what it should like explain above.
+</p>
+<p>But *I guarantee* that it really *doesn&rsquo;t happen often* and that the replacement *is near from your expecting*.
+</p>
+<p>And some kicks have fallbacks: this mean that 2 differents combination can give the same kick: not often.
+</p>
+<p>All according the fighter.
+</p></blockquote>
+</td></tr></table>
+
+<hr>
+<a name="Joystick-s-logic-of-battle_002drage"></a>
+<div class="header">
+<p>
+Next: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="n" rel="next">Images of the fighters from battle-rage</a>, Previous: <a href="#battle_002drage-fighting" accesskey="p" rel="prev">battle-rage fighting</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fjoysticks-joysticks"></a><a name="g_t1e"></a><a name="battle_002drage_005fjoysticks-joystick_002ds_002dlogic_002dof_002dbattle_002drage"></a><a name="g_t38"></a><a name="battle_002drage_005fjoysticks-doc"></a><a name="g_t39"></a><a name="Joystick_0028s_0029-logic-of-battle_002drage"></a>
+<h2 class="chapter">5 Joystick(s) logic of <code>battle-rage</code></h2>
+
+
+
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="#The-joystick-plan" accesskey="1">The joystick plan;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#battle_002drage-joystick-usage" accesskey="2">battle-rage joystick usage</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#battle_002drage-and-his-joystick-rules" accesskey="3">battle-rage and his joystick rules</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#The-different-joysticks-models-handling" accesskey="4">The different joysticks models handling</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Advice" accesskey="5">Advice;</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#If-the-joystick-configuration-fail" accesskey="6">If the joystick configuration fail.</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Technical-notes-about-joystick-handle" accesskey="7">Technical notes about joystick handle.</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+</pre></th></tr></table>
+
+<hr>
+<a name="The-joystick-plan"></a>
+<div class="header">
+<p>
+Next: <a href="#battle_002drage-joystick-usage" accesskey="n" rel="next">battle-rage joystick usage</a>, Up: <a href="#Joystick-s-logic-of-battle_002drage" accesskey="u" rel="up">Joystick s logic of battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fjoysticks-the_002djoystick_002dplan"></a><a name="g_t3a"></a><a name="The-joystick-plan_003a"></a>
+<h3 class="section">5.1 The joystick plan:</h3>
+
+
+
+<div class="display">
+<pre class="display"> <!-- /@w -->
+</pre></div>
+
+
+
+<blockquote>
+
+<img src="joystick_battle-rage.png" alt="joystick_battle-rage">
+</blockquote>
+
+
+<div class="display">
+<pre class="display"> <!-- /@w -->
+</pre></div>
+
+
+
+<hr>
+<a name="battle_002drage-joystick-usage"></a>
+<div class="header">
+<p>
+Next: <a href="#battle_002drage-and-his-joystick-rules" accesskey="n" rel="next">battle-rage and his joystick rules</a>, Previous: <a href="#The-joystick-plan" accesskey="p" rel="prev">The joystick plan</a>, Up: <a href="#Joystick-s-logic-of-battle_002drage" accesskey="u" rel="up">Joystick s logic of battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fjoysticks-battle_002drage_002djoystick_002dusage"></a><a name="g_t3b"></a><a name="battle_002drage-joystick-usage-1"></a>
+<h3 class="section">5.2 <code>battle-rage</code> joystick usage</h3>
+
+
+<blockquote>
+
+<p>For playing <code>battle-rage</code> you only need the the *4* buttons A, B, Y and Y and a *directional pad* (stick).
+</p>
+<p>The button at the top of the joystick (<code>RF</code>, <code>RB</code>, <code>LF</code>, <code>LB</code>) aren&rsquo;t used.
+</p>
+<p>You can use the *digital* stick (_directional pad_), *which is recommanded*, as well as the *analogical* stick.
+</p>
+<br><p>warning: 
+I can&rsquo;t guarantee you that you can use twice stick at the same time once your joystick configured.
+</p>
+</blockquote>
+
+<hr>
+<a name="battle_002drage-and-his-joystick-rules"></a>
+<div class="header">
+<p>
+Next: <a href="#The-different-joysticks-models-handling" accesskey="n" rel="next">The different joysticks models handling</a>, Previous: <a href="#battle_002drage-joystick-usage" accesskey="p" rel="prev">battle-rage joystick usage</a>, Up: <a href="#Joystick-s-logic-of-battle_002drage" accesskey="u" rel="up">Joystick s logic of battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fjoysticks-joystick_002drules"></a><a name="g_t31"></a><a name="battle_002drage_005fjoysticks-battle_002drage_002dand_002dhis_002djoystick_002drules"></a><a name="g_t3c"></a><a name="battle_002drage-and-his-joystick-rules-1"></a>
+<h3 class="section">5.3 <code>battle-rage</code> and his joystick rules</h3>
+
+
+<blockquote>
+
+<p><code>battle-rage</code> has some rules for playing with the joystick.
+</p>
+<p>According to the fact that you have *2 hands* and *2 foots* (exclude for the physic handicap).
+</p>
+<p><code>battle-rage</code> follow *the same logic* for the _joystick_ buttons *logic*:
+</p>
+
+<ul class="no-bullet">
+<li>+ The *back hand* from your fighter is *activate* by <code>pressing</code> the A button from the _joystick_.
+
+</li><li>+ The *front hand* from your fighter  is *activate* by <code>pressing</code> the X button from the _joystick_.
+
+</li><li>+ The *front foot* from your fighter is *activate* by <code>pressing</code> the B button from the _joystick_.
+
+</li><li>+ The *back foot* from your fighter is *activate* by <code>pressing</code> the Y button from the _joystick_.
+</li></ul>
+
+<br><p>note: 
+You can sea that like a cross which *X* axis is are the foots and the *Y* axis the hands.
+</p>
+
+<p>You can use *combinations* by adding a direction from the *directional keypad* to the used button.
+</p>
+<p>This will generate different kicks for every combination.
+</p>
+<p>*Finally* all combination make sens, _per example_:
+</p>
+<p>Pressing the *Up* arrow and an *hand button* will produce an *uppercut*,
+</p>
+<p>and pressing the :*Back arrow* and a *foot kick* will produce a *return foot kick*.
+</p>
+<table class="cartouche" border="1"><tr><td>
+<blockquote>
+<p><b>Warning:</b> because <code>nothing is perfect</code> it can happen that a combination don&rsquo;t really
+</p>
+<p>represent what it should like explain above.
+</p>
+<p>But *I guarantee* that it really *doesn&rsquo;t happen often* and that the replacement *is near from your expecting*.
+</p>
+<p>And some kicks have fallbacks: this mean that 2 differents combination can give the same kick: not often.
+</p>
+<p>All according the fighter.
+</p></blockquote>
+</td></tr></table>
+
+<br><p>note: 
+Because it&rsquo;s easier to press a button instead of using a combination the combinations inflict more damage.
+</p>
+
+<table class="cartouche" border="1"><tr><td>
+<blockquote>
+<p><b>Note:</b> This logic is follow for every *joystick* model since you have to configure your *joystick* first.
+</p>
+<p>But you can *reconfigure* your *joystick* if you make a misstake during the configuration phase.
+</p></blockquote>
+</td></tr></table>
+</blockquote>
+
+<hr>
+<a name="The-different-joysticks-models-handling"></a>
+<div class="header">
+<p>
+Next: <a href="#Advice" accesskey="n" rel="next">Advice</a>, Previous: <a href="#battle_002drage-and-his-joystick-rules" accesskey="p" rel="prev">battle-rage and his joystick rules</a>, Up: <a href="#Joystick-s-logic-of-battle_002drage" accesskey="u" rel="up">Joystick s logic of battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fjoysticks-the_002ddifferent_002djoysticks_002dmodels_002dhandling"></a><a name="g_t3d"></a><a name="The-different-joysticks-models-handling-1"></a>
+<h3 class="section">5.4 The different joysticks models handling</h3>
+
+
+<blockquote>
+
+<p><code>battle-rage</code> doesn&rsquo;t claim to take in charge every different joystick model of the world but:
+</p>
+<table class="cartouche" border="1"><tr><td>
+<blockquote>
+<p><b>Note:</b> <code>battle-rage</code> does the best for taking in charge the most of different joystick models.
+</p>
+<p>And you must pass through a _joystick configuration phase_, which is oblige,
+</p>
+<p>every time you *plug a new joystick model*.
+</p>
+<p>*Not* every time you plug your(s) _joystick_ to *play the game* !
+</p>
+<br><p>warning: 
+To know that every time you plug a new joystick model you will have to configure it.
+</p>
+
+<p>That&rsquo;s better for all: the game logic, you, conversation about battle rage,...
+</p>
+<p>Because it permit to set a precise combination set, not in according differents joysticks models mess, but acccording to the game.
+</p></blockquote>
+</td></tr></table>
+</blockquote>
+
+<hr>
+<a name="Advice"></a>
+<div class="header">
+<p>
+Next: <a href="#If-the-joystick-configuration-fail" accesskey="n" rel="next">If the joystick configuration fail</a>, Previous: <a href="#The-different-joysticks-models-handling" accesskey="p" rel="prev">The different joysticks models handling</a>, Up: <a href="#Joystick-s-logic-of-battle_002drage" accesskey="u" rel="up">Joystick s logic of battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fjoysticks-advice"></a><a name="g_t3e"></a><a name="Advice_003a"></a>
+<h3 class="section">5.5 Advice:</h3>
+
+
+<blockquote>
+
+<p><code>You must better plug the joystick before starting the game.</code>
+</p>
+<p>Else you will be notify about the problem and be invited to plug a joystick before really starting the game.
+</p>
+<p><code>And if you plan to play with 2 users plug 2 joytsick before gaming.</code>
+</p>
+<p>But you if you don&rsquo;t have plug 2 joysticks you will be invited to do so...
+</p>
+<p>*Sorry* but my _joystick handler_ doesn&rsquo;t handle the <code>plug-in plug-off</code> of _joysticks_,
+</p>
+<p>so the free hot plug of _joystick(s)_ is not permit with <code>battle-rage</code>.
+</p></blockquote>
+
+<hr>
+<a name="If-the-joystick-configuration-fail"></a>
+<div class="header">
+<p>
+Next: <a href="#Technical-notes-about-joystick-handle" accesskey="n" rel="next">Technical notes about joystick handle</a>, Previous: <a href="#Advice" accesskey="p" rel="prev">Advice</a>, Up: <a href="#Joystick-s-logic-of-battle_002drage" accesskey="u" rel="up">Joystick s logic of battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fjoysticks-if_002dthe_002djoystick_002dconfiguration_002dfail"></a><a name="g_t3f"></a><a name="If-the-joystick-configuration-fail_002e"></a>
+<h3 class="section">5.6 If the joystick configuration fail.</h3>
+
+
+<blockquote>
+
+<p>If you have bad luck and your _joystick_ model is really not compatible with battle rage, havoc.
+</p>
+<p>Else, <code>if you made an error</code>, you can try to reconfigure your _joystick_ again by using the configure joystick menu item.
+</p>
+<br><p>note: 
+Sea the technical note for further informations<a name="DOCF1" href="#FOOT1"><sup>1</sup></a>.
+</p>
+</blockquote>
+
+<hr>
+<a name="Technical-notes-about-joystick-handle"></a>
+<div class="header">
+<p>
+Previous: <a href="#If-the-joystick-configuration-fail" accesskey="p" rel="prev">If the joystick configuration fail</a>, Up: <a href="#Joystick-s-logic-of-battle_002drage" accesskey="u" rel="up">Joystick s logic of battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fjoysticks-technical_002dnotes_002dabout_002djoystick_002dconfig"></a><a name="g_t40"></a><a name="battle_002drage_005fjoysticks-technical_002dnotes_002dabout_002djoystick_002dhandle"></a><a name="g_t41"></a><a name="Technical-notes-about-joystick-handle_002e"></a>
+<h3 class="section">5.7 Technical notes about joystick handle.</h3>
+
+
+<blockquote>
+
+<p>Internally <code>battle-rage</code> suppose that the buttons A, B, Y and Y have all a value comprise between included _[0-3]_ like the most _joysticks_ does.
+</p>
+<p>Internally <code>battle-rage</code> suppose that directional pad is implemented as 2 axis (B and Y for the *X* axis and A and X for the y axis).
+</p>
+<p>But you can predict *nor* the <code>SDL2</code>: if an axis number will be the *X* or the *Y* most common joytsick use 0 for *X* and 1 for *Y*...
+</p>
+<p>But the sticks: analogical and digital are taking in charge, because with <code>battle-rage</code> you must configure you joystick the first time you plug it.
+</p>
+<p>And the big problem is that some joystick doesn&rsquo;t respect at all this rules.
+</p>
+<p>I can only test this values which are right for my test _joysticks_ (2 joysticks which works differently).
+</p>
+<p>So if your _joystick_ work otherwise than with this values for this set of buttons or axis *it won&rsquo;t work at all !*
+</p>
+<p>This fact is coming from that I use an <code>Input_Handler</code> written by *Shaun Mitchell*, for his book <code>SDL Game Development (june 2013) [Packt Pusblishing]</code>.
+</p>
+<p>I *enhance* this <code>Input_Handler</code> to take in charge the most of joytsick possible: The most common.
+</p>
+<p>Even if the base joystick for *Shaun Mitchell* (an <code>X Box 360</code> *joystick*) won&rsquo;t work with <code>battle rage</code> because of the fail of one axe.
+</p>
+<p>But you can play <code>battle-rage</code> with an <code>X Box 360</code> *joystick* but the *Y* axis won&rsquo;t work !
+</p>
+<br><p>note: 
+Great thanks to *Shaun Mitchell* for his book and code writing and his code.
+</p>
+</blockquote>
+
+<hr>
+<a name="Images-of-the-fighters-from-battle_002drage"></a>
+<div class="header">
+<p>
+Next: <a href="#battle_002drage-credits" accesskey="n" rel="next">battle-rage credits</a>, Previous: <a href="#Joystick-s-logic-of-battle_002drage" accesskey="p" rel="prev">Joystick s logic of battle-rage</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-fighters_002dgallery"></a><a name="g_t22"></a><a name="fighters_005fgallery-doc"></a><a name="g_t42"></a><a name="fighters_005fgallery-images_002dof_002dthe_002dfighters_002dfrom_002dbattle_002drage"></a><a name="g_t43"></a><a name="Images-of-the-fighters-from-battle_002drage-1"></a>
+<h2 class="chapter">6 Images of the fighters from <code>battle-rage</code></h2>
+
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="#Fuuma" accesskey="1">Fuuma</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Geese-Howard" accesskey="2">Geese Howard</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Hanzo" accesskey="3">Hanzo</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Hotaru-Futaba" accesskey="4">Hotaru Futaba</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Iori-Yagami" accesskey="5">Iori Yagami</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Kim-Kaphwan" accesskey="6">Kim Kaphwan</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Kisarah-Westfield" accesskey="7">Kisarah Westfield</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#K" accesskey="8">K</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Kyo-Kusanagi" accesskey="9">Kyo Kusanagi</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Lee-Pai-Long">Lee Pai Long</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Mai-Shiranui">Mai Shiranui</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Mr-Big">Mr Big</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Mr-Karate">Mr Karate</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Robert-Garcia">Robert Garcia</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Rock-Howard">Rock Howard</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Terry-Bogard">Terry Bogard</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+</pre></th></tr></table>
+
+<hr>
+<a name="Fuuma"></a>
+<div class="header">
+<p>
+Next: <a href="#Geese-Howard" accesskey="n" rel="next">Geese Howard</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-fuuma_002dimage"></a><a name="g_t6"></a><a name="fighters_005fgallery-fuuma"></a><a name="g_t44"></a><a name="Fuuma-1"></a>
+<h3 class="section">6.1 Fuuma</h3>
+
+
+<img src="Fuuma.png" alt="Fuuma">
+
+<hr>
+<a name="Geese-Howard"></a>
+<div class="header">
+<p>
+Next: <a href="#Hanzo" accesskey="n" rel="next">Hanzo</a>, Previous: <a href="#Fuuma" accesskey="p" rel="prev">Fuuma</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-geese_002dhoward_002dimage"></a><a name="g_t7"></a><a name="fighters_005fgallery-geese_002dhoward"></a><a name="g_t45"></a><a name="Geese-Howard-1"></a>
+<h3 class="section">6.2 Geese Howard</h3>
+
+
+<img src="Geese_Howard.png" alt="Geese_Howard">
+
+<hr>
+<a name="Hanzo"></a>
+<div class="header">
+<p>
+Next: <a href="#Hotaru-Futaba" accesskey="n" rel="next">Hotaru Futaba</a>, Previous: <a href="#Geese-Howard" accesskey="p" rel="prev">Geese Howard</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-hanzo_002dimage"></a><a name="g_t8"></a><a name="fighters_005fgallery-hanzo"></a><a name="g_t46"></a><a name="Hanzo-1"></a>
+<h3 class="section">6.3 Hanzo</h3>
+
+
+<img src="Hanzo.png" alt="Hanzo">
+
+<hr>
+<a name="Hotaru-Futaba"></a>
+<div class="header">
+<p>
+Next: <a href="#Iori-Yagami" accesskey="n" rel="next">Iori Yagami</a>, Previous: <a href="#Hanzo" accesskey="p" rel="prev">Hanzo</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-hotaru_002dfutaba"></a><a name="g_t47"></a><a name="fighters_005fgallery-hotaru_002dfutaba_002dimage"></a><a name="g_t9"></a><a name="Hotaru-Futaba-1"></a>
+<h3 class="section">6.4 Hotaru Futaba</h3>
+
+
+<img src="Hotaru_Futaba.png" alt="Hotaru_Futaba">
+
+<hr>
+<a name="Iori-Yagami"></a>
+<div class="header">
+<p>
+Next: <a href="#Kim-Kaphwan" accesskey="n" rel="next">Kim Kaphwan</a>, Previous: <a href="#Hotaru-Futaba" accesskey="p" rel="prev">Hotaru Futaba</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-iori_002dyagami"></a><a name="g_t48"></a><a name="fighters_005fgallery-iori_002dyagami_002dimage"></a><a name="a"></a><a name="Iori-Yagami-1"></a>
+<h3 class="section">6.5 Iori Yagami</h3>
+
+
+<img src="Iori_Yagami.png" alt="Iori_Yagami">
+
+<hr>
+<a name="Kim-Kaphwan"></a>
+<div class="header">
+<p>
+Next: <a href="#Kisarah-Westfield" accesskey="n" rel="next">Kisarah Westfield</a>, Previous: <a href="#Iori-Yagami" accesskey="p" rel="prev">Iori Yagami</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-kim_002dkaphwan"></a><a name="g_t49"></a><a name="fighters_005fgallery-kim_002dkaphwan_002dimage"></a><a name="b"></a><a name="Kim-Kaphwan-1"></a>
+<h3 class="section">6.6 Kim Kaphwan</h3>
+
+
+<img src="Kim_Kaphwan.png" alt="Kim_Kaphwan">
+
+<hr>
+<a name="Kisarah-Westfield"></a>
+<div class="header">
+<p>
+Next: <a href="#K" accesskey="n" rel="next">K</a>, Previous: <a href="#Kim-Kaphwan" accesskey="p" rel="prev">Kim Kaphwan</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-kisarah_002dwestfield"></a><a name="g_t4a"></a><a name="fighters_005fgallery-kisarah_002dwestfield_002dimage"></a><a name="c"></a><a name="Kisarah-Westfield-1"></a>
+<h3 class="section">6.7 Kisarah Westfield</h3>
+
+
+<img src="Kisarah_Westfield.png" alt="Kisarah_Westfield">
+
+<hr>
+<a name="K"></a>
+<div class="header">
+<p>
+Next: <a href="#Kyo-Kusanagi" accesskey="n" rel="next">Kyo Kusanagi</a>, Previous: <a href="#Kisarah-Westfield" accesskey="p" rel="prev">Kisarah Westfield</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-k"></a><a name="g_t4b"></a><a name="fighters_005fgallery-k_002dimage"></a><a name="d"></a><a name="K-1"></a>
+<h3 class="section">6.8 K</h3>
+
+
+<img src="K.png" alt="K">
+
+<hr>
+<a name="Kyo-Kusanagi"></a>
+<div class="header">
+<p>
+Next: <a href="#Lee-Pai-Long" accesskey="n" rel="next">Lee Pai Long</a>, Previous: <a href="#K" accesskey="p" rel="prev">K</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-kyo_002dkusanagi"></a><a name="g_t4c"></a><a name="fighters_005fgallery-kyo_002dkusanagi_002dimage"></a><a name="e"></a><a name="Kyo-Kusanagi-1"></a>
+<h3 class="section">6.9 Kyo Kusanagi</h3>
+
+
+<img src="Kyo_Kusanagi.png" alt="Kyo_Kusanagi">
+
+<hr>
+<a name="Lee-Pai-Long"></a>
+<div class="header">
+<p>
+Next: <a href="#Mai-Shiranui" accesskey="n" rel="next">Mai Shiranui</a>, Previous: <a href="#Kyo-Kusanagi" accesskey="p" rel="prev">Kyo Kusanagi</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-lee_002dpai_002dlong_002dimage"></a><a name="f"></a><a name="fighters_005fgallery-lee_002dpai_002dlong"></a><a name="g_t4d"></a><a name="Lee-Pai-Long-1"></a>
+<h3 class="section">6.10 Lee Pai Long</h3>
+
+
+<img src="Lee_Pai_Long.png" alt="Lee_Pai_Long">
+
+<hr>
+<a name="Mai-Shiranui"></a>
+<div class="header">
+<p>
+Next: <a href="#Mr-Big" accesskey="n" rel="next">Mr Big</a>, Previous: <a href="#Lee-Pai-Long" accesskey="p" rel="prev">Lee Pai Long</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-mai_002dshiranui_002dimage"></a><a name="g_t10"></a><a name="fighters_005fgallery-mai_002dshiranui"></a><a name="g_t4e"></a><a name="Mai-Shiranui-1"></a>
+<h3 class="section">6.11 Mai Shiranui</h3>
+
+
+<img src="Mai_Shiranui.png" alt="Mai_Shiranui">
+
+<hr>
+<a name="Mr-Big"></a>
+<div class="header">
+<p>
+Next: <a href="#Mr-Karate" accesskey="n" rel="next">Mr Karate</a>, Previous: <a href="#Mai-Shiranui" accesskey="p" rel="prev">Mai Shiranui</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-mr_002dbig"></a><a name="g_t4f"></a><a name="fighters_005fgallery-mr_002dbig_002dimage"></a><a name="g_t11"></a><a name="Mr-Big-1"></a>
+<h3 class="section">6.12 Mr Big</h3>
+
+
+<img src="Mr_Big.png" alt="Mr_Big">
+
+<hr>
+<a name="Mr-Karate"></a>
+<div class="header">
+<p>
+Next: <a href="#Robert-Garcia" accesskey="n" rel="next">Robert Garcia</a>, Previous: <a href="#Mr-Big" accesskey="p" rel="prev">Mr Big</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-mr_002dkarate"></a><a name="g_t50"></a><a name="fighters_005fgallery-mr_002dkarate_002dimage"></a><a name="g_t12"></a><a name="Mr-Karate-1"></a>
+<h3 class="section">6.13 Mr Karate</h3>
+
+
+<img src="Mr_Karate.png" alt="Mr_Karate">
+
+<hr>
+<a name="Robert-Garcia"></a>
+<div class="header">
+<p>
+Next: <a href="#Rock-Howard" accesskey="n" rel="next">Rock Howard</a>, Previous: <a href="#Mr-Karate" accesskey="p" rel="prev">Mr Karate</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-robert_002dgarcia"></a><a name="g_t51"></a><a name="fighters_005fgallery-robert_002dgarcia_002dimage"></a><a name="g_t13"></a><a name="Robert-Garcia-1"></a>
+<h3 class="section">6.14 Robert Garcia</h3>
+
+
+<img src="Robert_Garcia.png" alt="Robert_Garcia">
+
+<hr>
+<a name="Rock-Howard"></a>
+<div class="header">
+<p>
+Next: <a href="#Terry-Bogard" accesskey="n" rel="next">Terry Bogard</a>, Previous: <a href="#Robert-Garcia" accesskey="p" rel="prev">Robert Garcia</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-rock_002dhoward_002dimage"></a><a name="g_t14"></a><a name="fighters_005fgallery-rock_002dhoward"></a><a name="g_t52"></a><a name="Rock-Howard-1"></a>
+<h3 class="section">6.15 Rock Howard</h3>
+
+
+<img src="Rock_Howard.png" alt="Rock_Howard">
+
+<hr>
+<a name="Terry-Bogard"></a>
+<div class="header">
+<p>
+Previous: <a href="#Rock-Howard" accesskey="p" rel="prev">Rock Howard</a>, Up: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="u" rel="up">Images of the fighters from battle-rage</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="fighters_005fgallery-terry_002dbogard"></a><a name="g_t53"></a><a name="fighters_005fgallery-terry_002dbogard_002dimage"></a><a name="g_t15"></a><a name="Terry-Bogard-1"></a>
+<h3 class="section">6.16 Terry Bogard</h3>
+
+
+<img src="Terry_Bogard.png" alt="Terry_Bogard">
+
+<hr>
+<a name="battle_002drage-credits"></a>
+<div class="header">
+<p>
+Previous: <a href="#Images-of-the-fighters-from-battle_002drage" accesskey="p" rel="prev">Images of the fighters from battle-rage</a>, Up: <a href="#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fcredits-battle_002drage_002dcredits"></a><a name="g_t54"></a><a name="battle_002drage_005fcredits-doc"></a><a name="g_t55"></a><a name="battle_002drage-credits-1"></a>
+<h2 class="chapter">7 <code>battle-rage</code> credits</h2>
+
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="#Ressources" accesskey="1">Ressources</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Credits" accesskey="2">Credits</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+</pre></th></tr></table>
+
+<hr>
+<a name="Ressources"></a>
+<div class="header">
+<p>
+Next: <a href="#Credits" accesskey="n" rel="next">Credits</a>, Up: <a href="#battle_002drage-credits" accesskey="u" rel="up">battle-rage credits</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fcredits-ressources"></a><a name="g_t56"></a><a name="Ressources-1"></a>
+<h3 class="section">7.1 Ressources</h3>
+
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="#Images" accesskey="1">Images</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Sounds" accesskey="2">Sounds</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="#Others" accesskey="3">Others</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+
+</pre></th></tr></table>
+
+<hr>
+<a name="Images"></a>
+<div class="header">
+<p>
+Next: <a href="#Sounds" accesskey="n" rel="next">Sounds</a>, Up: <a href="#Ressources" accesskey="u" rel="up">Ressources</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fcredits-images"></a><a name="g_t57"></a><a name="Images-1"></a>
+<h4 class="subsection">7.1.1 Images</h4>
+
+
+<blockquote>
+
+<p>The fighters images are issue from the game:
+</p>
+
+<ul class="no-bullet">
+<li>+ NeoGeo Battle Coliseum.
+</li></ul>
+
+<br><p>note: 
+All original fighters are available in the index from my website &lt;&lsquo;<code>http://open-source-projects.net</code>&rsquo;&gt;
+</p>
+</blockquote>
+
+
+<div class="display">
+<pre class="display"> <!-- /@w -->
+</pre></div>
+
+
+
+<blockquote>
+
+<p>The bridge backgroud image is issue from the
+</p>
+<p>shun-li stage of the game street fighter.
+</p>
+<p>For the landscapes backgrounds:
+</p>
+<img src="by_cyrus_annihilator.png" alt="by_cyrus_annihilator">
+</blockquote>
+
+<hr>
+<a name="Sounds"></a>
+<div class="header">
+<p>
+Next: <a href="#Others" accesskey="n" rel="next">Others</a>, Previous: <a href="#Images" accesskey="p" rel="prev">Images</a>, Up: <a href="#Ressources" accesskey="u" rel="up">Ressources</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fcredits-sounds"></a><a name="g_t58"></a><a name="Sounds-1"></a>
+<h4 class="subsection">7.1.2 Sounds</h4>
+
+
+<blockquote>
+
+<p>For the voices thanks to:
+</p>
+<p>Male voice:
+</p>
+<p>Jeffrey M. Smith
+</p>
+<p>&lt;&lsquo;<code>http://fiverr.com/jeffreymsmith</code>&rsquo;&gt;
+</p></blockquote>
+
+
+<div class="display">
+<pre class="display"> <!-- /@w -->
+</pre></div>
+
+
+
+<blockquote>
+
+<p>Female voice:
+</p>
+<p>Giselle
+</p>
+<p>&lt;&lsquo;<code>http://fiverr.com/easymedia</code>&rsquo;&gt;
+</p></blockquote>
+
+<hr>
+<a name="Others"></a>
+<div class="header">
+<p>
+Previous: <a href="#Sounds" accesskey="p" rel="prev">Sounds</a>, Up: <a href="#Ressources" accesskey="u" rel="up">Ressources</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fcredits-others"></a><a name="g_t59"></a><a name="Others-1"></a>
+<h4 class="subsection">7.1.3 Others</h4>
+
+
+<blockquote>
+
+<p>For the others ressources their all under free licenses found on severals sprites websites.
+</p></blockquote>
+
+<hr>
+<a name="Credits"></a>
+<div class="header">
+<p>
+Previous: <a href="#Ressources" accesskey="p" rel="prev">Ressources</a>, Up: <a href="#battle_002drage-credits" accesskey="u" rel="up">battle-rage credits</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<a name="battle_002drage_005fcredits-credits"></a><a name="g_t5a"></a><a name="Credits-1"></a>
+<h3 class="section">7.2 Credits</h3>
+
+
+<blockquote>
+
+<p>Thanks to my mother, my family and the doctors.
+</p>
+<p>Stay away from drugs:
+</p>
+<p>Drugs destroy your brain and your life.
+</p></blockquote>
+
+
+
+
+
+<div class="footnote">
+<hr>
+<h4 class="footnotes-heading">Footnotes</h4>
+
+<h3><a name="FOOT1" href="#DOCF1">(1)</a></h3>
+<p>technical-notes-about-joystick-config</p>
+</div>
+<hr>
+
+
+
+</body>
+</html>

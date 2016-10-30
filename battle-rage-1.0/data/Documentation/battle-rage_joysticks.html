@@ -1,0 +1,279 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Joystick(s) logic of battle-rage &mdash; battle-rage 1.0 notice</title>
+    
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="top" title="battle-rage 1.0 notice" href="notice.html" />
+    <link rel="next" title="Images of the fighters from battle-rage" href="fighters_gallery.html" />
+    <link rel="prev" title="battle-rage fighting" href="battle-rage_fighting.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="fighters_gallery.html" title="Images of the fighters from battle-rage"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="battle-rage_fighting.html" title="battle-rage fighting"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="notice.html">battle-rage</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="notice.html">
+              <img class="logo" src="_static/battle-rage_icon.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="notice.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Joystick(s) logic of <strong class="program">battle-rage</strong></a><ul>
+<li><a class="reference internal" href="#the-joystick-plan">The joystick plan:</a></li>
+<li><a class="reference internal" href="#battle-rage-joystick-usage"><strong class="program">battle-rage</strong> joystick usage</a></li>
+<li><a class="reference internal" href="#battle-rage-and-his-joystick-rules"><strong class="program">battle-rage</strong> and his joystick rules</a></li>
+<li><a class="reference internal" href="#the-different-joysticks-models-handling">The different joysticks models handling</a></li>
+<li><a class="reference internal" href="#advice">Advice:</a></li>
+<li><a class="reference internal" href="#if-the-joystick-configuration-fail">If the joystick configuration fail.</a></li>
+<li><a class="reference internal" href="#technical-notes-about-joystick-handle">Technical notes about joystick handle.</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="battle-rage_fighting.html"
+                        title="previous chapter"><strong class="program">battle-rage</strong> fighting</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="fighters_gallery.html"
+                        title="next chapter">Images of the fighters from <strong class="program">battle-rage</strong></a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="joystick-s-logic-of-battle-rage">
+<span id="joysticks"></span><h1>Joystick(s) logic of <strong class="program">battle-rage</strong><a class="headerlink" href="#joystick-s-logic-of-battle-rage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-joystick-plan">
+<h2>The joystick plan:<a class="headerlink" href="#the-joystick-plan" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><img alt="_images/joystick_battle-rage.png" src="_images/joystick_battle-rage.png" />
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="battle-rage-joystick-usage">
+<h2><strong class="program">battle-rage</strong> joystick usage<a class="headerlink" href="#battle-rage-joystick-usage" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>For playing <strong class="program">battle-rage</strong> you only need the the <strong>4</strong> buttons <span class="guilabel"><span class="accelerator">A</span></span>, <span class="guilabel"><span class="accelerator">B</span></span>, <span class="guilabel"><span class="accelerator">Y</span></span> and <span class="guilabel"><span class="accelerator">Y</span></span> and a <strong>directional pad</strong> (stick).</p>
+<p>The button at the top of the joystick (<code class="docutils literal"><span class="pre">RF</span></code>, <code class="docutils literal"><span class="pre">RB</span></code>, <code class="docutils literal"><span class="pre">LF</span></code>, <code class="docutils literal"><span class="pre">LB</span></code>) aren&#8217;t used.</p>
+<p>You can use the <strong>digital</strong> stick (<em>directional pad</em>), <strong>which is recommended</strong>, as well as the <strong>analogical</strong> stick.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">warning:</th><td class="field-body">I can&#8217;t guarantee you that you can use twice stick at the same time once your joystick configured.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="battle-rage-and-his-joystick-rules">
+<span id="joystick-rules"></span><h2><strong class="program">battle-rage</strong> and his joystick rules<a class="headerlink" href="#battle-rage-and-his-joystick-rules" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><strong class="program">battle-rage</strong> has some rules for playing with the joystick.</p>
+<p>According to the fact that you have <strong>2 hands</strong> and <strong>2 foots</strong> (exclude for the physic handicap).</p>
+<p><strong class="program">battle-rage</strong> follow <strong>the same logic</strong> for the <em>joystick</em> buttons <strong>logic</strong>:</p>
+<ul class="simple">
+<li>The <strong>back hand</strong> from your fighter is <strong>activate</strong> by <code class="docutils literal"><span class="pre">pressing</span></code> the <span class="guilabel"><span class="accelerator">A</span></span> button from the <em>joystick</em>.</li>
+<li>The <strong>front hand</strong> from your fighter  is <strong>activate</strong> by <code class="docutils literal"><span class="pre">pressing</span></code> the <span class="guilabel"><span class="accelerator">X</span></span> button from the <em>joystick</em>.</li>
+<li>The <strong>front foot</strong> from your fighter is <strong>activate</strong> by <code class="docutils literal"><span class="pre">pressing</span></code> the <span class="guilabel"><span class="accelerator">B</span></span> button from the <em>joystick</em>.</li>
+<li>The <strong>back foot</strong> from your fighter is <strong>activate</strong> by <code class="docutils literal"><span class="pre">pressing</span></code> the <span class="guilabel"><span class="accelerator">Y</span></span> button from the <em>joystick</em>.</li>
+</ul>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">note:</th><td class="field-body">You can sea that like a cross which <strong>X</strong> axis is are the foots and the <strong>Y</strong> axis the hands.</td>
+</tr>
+</tbody>
+</table>
+<p>You can use <strong>combinations</strong> by adding a direction from the <strong>directional keypad</strong> to the used button.</p>
+<p>This will generate different kicks for every combination.</p>
+<p><strong>Finally</strong> all combination make sens, <em>per example</em>:</p>
+<p>Pressing the <strong>Up</strong> arrow and an <strong>hand button</strong> will produce an <strong>uppercut</strong>,</p>
+<p>and pressing the :<strong>Back arrow</strong> and a <strong>foot kick</strong> will produce a <strong>return foot kick</strong>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>because <code class="docutils literal"><span class="pre">nothing</span> <span class="pre">is</span> <span class="pre">perfect</span></code> it can happen that a combination don&#8217;t really</p>
+<p>represent what it should like explain above.</p>
+<p>But <strong>I guarantee</strong> that it really <strong>doesn&#8217;t happen often</strong> and that the replacement <strong>is near from your expecting</strong>.</p>
+<p>And some kicks have fallbacks: this mean that 2 differents combination can give the same kick: not often.</p>
+<p class="last">All according the fighter.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">note:</th><td class="field-body">Because it&#8217;s easier to press a button instead of using a combination the combinations inflict more damage.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>This logic is follow for every <strong>joystick</strong> model since you have to configure your <strong>joystick</strong> first.</p>
+<p class="last">But you can <strong>reconfigure</strong> your <strong>joystick</strong> if you make a mistake during the configuration phase.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="the-different-joysticks-models-handling">
+<h2>The different joysticks models handling<a class="headerlink" href="#the-different-joysticks-models-handling" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><strong class="program">battle-rage</strong> doesn&#8217;t claim to take in charge every different joystick model of the world but:</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p><strong class="program">battle-rage</strong> does the best for taking in charge the most of different joystick models.</p>
+<p>And you must pass through a <em>joystick configuration phase</em>, which is oblige,</p>
+<p>every time you <strong>plug a new joystick model</strong>.</p>
+<p><strong>Not</strong> every time you plug your(s) <em>joystick</em> to <strong>play the game</strong> !</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">warning:</th><td class="field-body">To know that every time you plug a new joystick model you will have to configure it.</td>
+</tr>
+</tbody>
+</table>
+<p>That&#8217;s better for all: the game logic, you, conversation about battle rage,...</p>
+<p class="last">Because it permit to set a precise combination set, not in according differents joysticks models mess, but according to the game.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="advice">
+<h2>Advice:<a class="headerlink" href="#advice" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">You</span> <span class="pre">must</span> <span class="pre">better</span> <span class="pre">plug</span> <span class="pre">the</span> <span class="pre">joystick</span> <span class="pre">before</span> <span class="pre">starting</span> <span class="pre">the</span> <span class="pre">game.</span></code></p>
+<p>Else you will be notify about the problem and be invited to plug a joystick before really starting the game.</p>
+<p><code class="docutils literal"><span class="pre">And</span> <span class="pre">if</span> <span class="pre">you</span> <span class="pre">plan</span> <span class="pre">to</span> <span class="pre">play</span> <span class="pre">with</span> <span class="pre">2</span> <span class="pre">users</span> <span class="pre">plug</span> <span class="pre">2</span> <span class="pre">joystick</span> <span class="pre">before</span> <span class="pre">gaming.</span></code></p>
+<p>But you if you don&#8217;t have plug 2 joysticks you will be invited to do so...</p>
+<p><strong>Sorry</strong> but my <em>joystick handler</em> doesn&#8217;t handle the <code class="docutils literal"><span class="pre">plug-in</span> <span class="pre">plug-off</span></code> of <em>joysticks</em>,</p>
+<p>so the free hot plug of <em>joystick(s)</em> is not permit with <strong class="program">battle-rage</strong>.</p>
+</div></blockquote>
+</div>
+<div class="section" id="if-the-joystick-configuration-fail">
+<h2>If the joystick configuration fail.<a class="headerlink" href="#if-the-joystick-configuration-fail" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>If you have bad luck and your <em>joystick</em> model is really not compatible with battle rage, havoc.</p>
+<p>Else, <code class="docutils literal"><span class="pre">if</span> <span class="pre">you</span> <span class="pre">made</span> <span class="pre">an</span> <span class="pre">error</span></code>, you can try to reconfigure your <em>joystick</em> again by using the configure joystick menu item.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">note:</th><td class="field-body"><a class="reference external" href="technical-notes-about-joystick-config">Sea the technical note for further informations</a>.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="technical-notes-about-joystick-handle">
+<span id="technical-notes-about-joystick-config"></span><h2>Technical notes about joystick handle.<a class="headerlink" href="#technical-notes-about-joystick-handle" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Internally <strong class="program">battle-rage</strong> highly suppose that the buttons <span class="guilabel"><span class="accelerator">A</span></span>, <span class="guilabel"><span class="accelerator">B</span></span>, <span class="guilabel"><span class="accelerator">X</span></span> and <span class="guilabel"><span class="accelerator">Y</span></span> have all a value comprise between included <em>[0-3]</em> like the most <em>joysticks</em> does.</p>
+<p>Internally <strong class="program">battle-rage</strong> suppose that directional pad is implemented as 2 axis (<span class="guilabel"><span class="accelerator">B</span></span> and <span class="guilabel"><span class="accelerator">Y</span></span> for the <strong>X</strong> axis and <span class="guilabel"><span class="accelerator">A</span></span> and <span class="guilabel"><span class="accelerator">X</span></span> for the <strong>Y</strong> axis).</p>
+<p>But you can predict <strong>nor</strong> the <code class="docutils literal"><span class="pre">SDL2</span></code>: if an axis number will be the <strong>X</strong> or the <strong>Y</strong> but most common joystick use <code class="docutils literal"><span class="pre">0</span></code> for <strong>X</strong> and <code class="docutils literal"><span class="pre">1</span></code> for <strong>Y</strong>...</p>
+<p>But the sticks: analogical and digital are taking in charge, because with <strong class="program">battle-rage</strong> you must configure you joystick the first time you plug it.</p>
+<p>And the big problem is that some joystick doesn&#8217;t respect at all this rules.</p>
+<p>I can only test this values which are right for my test <em>joysticks</em> (2 joysticks which works differently).</p>
+<p>So if your <em>joystick</em> work otherwise than with this values for this set of buttons or axis <strong>it won&#8217;t work at all !</strong></p>
+<p>This fact is coming from that I use an <code class="docutils literal"><span class="pre">Input_Handler</span></code> written by <strong>Shaun Mitchell</strong>, for his book <code class="docutils literal"><span class="pre">SDL</span> <span class="pre">Game</span> <span class="pre">Development</span> <span class="pre">(june</span> <span class="pre">2013)</span> <span class="pre">[Packt</span> <span class="pre">Publishing]</span></code>.</p>
+<p>I <strong>enhance</strong> this <code class="docutils literal"><span class="pre">Input_Handler</span></code> to take in charge the most of joystick possible: The most common.</p>
+<p>Even if the base joystick for <strong>Shaun Mitchell</strong> (an <code class="docutils literal"><span class="pre">X</span> <span class="pre">Box</span> <span class="pre">360</span></code> <strong>joystick</strong>) won&#8217;t work with <strong class="program">battle rage</strong> because of the fail of one axe.</p>
+<p>But you can play <strong class="program">battle-rage</strong> with an <code class="docutils literal"><span class="pre">X</span> <span class="pre">Box</span> <span class="pre">360</span></code> <strong>joystick</strong> but the <strong>Y</strong> axis won&#8217;t work !</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">note:</th><td class="field-body">Great thanks to <strong>Shaun Mitchell</strong> for his book and code writing and his code.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="fighters_gallery.html" title="Images of the fighters from battle-rage"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="battle-rage_fighting.html" title="battle-rage fighting"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="notice.html">battle-rage</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Brüggemann Eddie.
+      Last updated on Oct 10, 2016.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.6.
+    </div>
+  </body>
+</html>
