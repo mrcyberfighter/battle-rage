@@ -35,7 +35,7 @@
   *
   * For his game: battle-rage.
   *
-  * Credits: Thanks to Shaun for his good implementation of an Vector2D.
+  * Credits: Thanks to Shaun for his good implementation of an Input_Handler.
   *
   ***************************************************************************/
 
